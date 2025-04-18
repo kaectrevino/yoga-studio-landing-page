@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.yogastudio {
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/waves-desktop.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.lady, .menu {
+    flex-grow: 1;
+}
+
+.lady {
+    background-image: url(assets/lotus-position.svg);
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.top, .bottom {
+    flex-grow: 1;
+}
