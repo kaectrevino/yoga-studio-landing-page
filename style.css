@@ -20,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: auto 60%;
     background-position: center;
+    width: 50%;
 }
 
 .menu {
@@ -27,6 +28,42 @@ body {
     flex-direction: column;
 }
 
-.top, .bottom {
+/* .top, .bottom {
     flex-grow: 1;
+} */
+
+.top {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.yogastudiotitle {
+    font-size: 30px;
+    margin: 0;
+}
+
+.getfit {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.buttoncontainer {
+    display: flex;
+    column-gap: 10px;
+}
+
+.joinnow, .viewschedule {
+    flex-grow: 1;
+    height: 30px;
 }
