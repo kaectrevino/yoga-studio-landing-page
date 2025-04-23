@@ -9,6 +9,7 @@ body {
     background-image: url(assets/waves-desktop.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    font-family: "Inter", sans-serif;
 }
 
 .lady, .menu {
@@ -45,10 +46,14 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    max-width: 400px;
+    align-self: center;
 }
 
 .yogastudiotitle {
     font-size: 30px;
+    font-weight: bold;
+    color: #506279;
     margin: 0;
 }
 
@@ -66,4 +71,15 @@ body {
 .joinnow, .viewschedule {
     flex-grow: 1;
     height: 30px;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.joinnow {
+    background-color: #F88CAC;
+    color: #FFFFFF;
+}
+
+.viewschedule {
+   background-color: #E9F0FD; 
 }
