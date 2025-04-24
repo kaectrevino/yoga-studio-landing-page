@@ -6,11 +6,15 @@ body {
     display:flex;
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/waves-desktop.webp);
-    background-size: 100% 100%;
+    background-image: url(assets/waves-mobile.webp);
+    background-size: 100% 50vh;
     background-repeat: no-repeat;
+    background-position: center 50vh;
     font-family: "Inter", sans-serif;
+    flex-direction: column-reverse;
 }
+
+
 
 .lady, .menu {
     flex-grow: 1;
@@ -19,14 +23,35 @@ body {
 .lady {
     background-image: url(assets/lotus-position.svg);
     background-repeat: no-repeat;
-    background-size: auto 60%;
-    background-position: center;
-    width: 50%;
+    background-size: auto 80%;
+    background-position: top center;
+    width: 100%;
+    height: 30vh;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
+    height: 30vh;
+}
+
+@media screen and (min-width: 769px) {
+    .yogastudio {
+        flex-direction: row;
+        background-image: url(assets/waves-desktop.webp);
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .lady {
+        height: auto;
+        width: 50%;
+        background-position: center;
+        background-size: auto 60%;
+    }
+    
+    .menu {
+        height: auto;
+    }
 }
 
 /* .top, .bottom {
@@ -83,3 +108,7 @@ body {
 .viewschedule {
    background-color: #E9F0FD; 
 }
+
+
+
+
